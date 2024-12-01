@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 6rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  .date-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ccc;
+  }
+  
+  .date-container img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+  }
